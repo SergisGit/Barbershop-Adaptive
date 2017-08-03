@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Барбершоп Бородинский</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <h1 class="visually-hidden">Барбершоп «Бородинский» — истинно мужская классика</h1>
+    <div class="page-header__logo">
+      <picture>
+        <!--[if IE 9]><video style="display: none;"><![endif]-->
+        <source srcset="img/logotype-desktop.svg" media="(min-width: 1200px)">
+        <source srcset="img/logotype-tablet.svg" media="(min-width: 768px) and (max-width: 1999px)">
+        <source srcset="img/logotype-mobile.svg" media="(max-width: 767px)">
+        <!--[if IE 9]></video><![endif]-->
+        <img src="img/logotype-desktop.svg" alt="Барбершоп Бородинский">
+      </picture>
+    </div>
+    <nav class="main-nav">
+      <button class="main-nav__toggle">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__items">
+          <li class="main-nav__item  main-nav__item_active"><a class="main-nav__link">ГЛАВНАЯ</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">НАШИ РАБОТЫ</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">ЗАПИСАТЬСЯ</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">КОНТАКТЫ</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
+        </ul>
+        <ul class="main-nav__user-items">
+          <li class="main-nav__user-item"><a class="main-nav__link  main-nav__user-link" href="#">Вход</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="statistics">
+      <h2 class="statistics__title  visually-hidden">Статистика Барбершопа</h2>
+      <header class="statistics__header">
+        <b class="statistics__slogan">Стрижка у нас<br> это выгодно!</b>
+        <p class="statistics__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:
+        </p>
+        <p class="statistics__legend  statistics__legend_top">* &ndash; приведённые данные ложь</p>
+      </header>
+      <table class="statistics__items">
+        <tr class="statistics__item">
+          <td class="statistics__value">1 500<sup class="statistics__sup">*</sup></td>
+          <td class="statistics__field">рублей<br> вложений</td>
+        </tr>
+        <tr class="statistics__item">
+          <td class="statistics__value">7 200</td>
+          <td class="statistics__field">секунд<br> времени мастера</td>
+        </tr>
+        <tr class="statistics__item">
+          <td class="statistics__value">90 000</td>
+          <td class="statistics__field">постриженных<br> волос</td>
+        </tr>
+        <tr class="statistics__item">
+          <td class="statistics__value">500 000<sup class="statistics__sup">*</sup></td>
+          <td class="statistics__field">лайков и<br> комплиментов</td>
+        </tr>
+      </table>
+      <p class="statistics__legend  statistics__legend_bottom">* &ndash; приведённые данные ложь</p>
+    </section>
+
+    <section class="features">
+      <h2 class="features__title  visually-hidden">Наши преимущества</h2>
+      <div class="slider  features__slider">
+        <input type="radio" class="slider__input  slider__input-1" name="features" id="features-input-1" checked>
+        <input type="radio" class="slider__input  slider__input-2" name="features" id="features-input-2">
+        <input type="radio" class="slider__input  slider__input-3" name="features" id="features-input-3">
+        <div class="slider__inner">
+          <ul class="slider__list  features__items">
+            <li class="slider__item  features__item  features__item_fast">
+              <svg class="features__svg" width="95" height="94">
+						  <use xlink:href="#advantage-1" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+					  </svg>
+              <h3 class="features__title">БЫСТРО</h3>
+              <p class="features__description">Мы делаем свою работу быстро! Два часа пролетят незаметно, и&nbsp;Вы – счастливый обладатель стильной стрижки-минутки.</p>
+            </li>
+            <li class="slider__item  features__item  features__item_cool">
+              <svg class="features__svg" width="95" height="94">
+						  <use xlink:href="#advantage-2" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+					  </svg>
+              <h3 class="features__title">КРУТО</h3>
+              <p class="features__description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во&nbsp;всяком случае внешне.</p>
+            </li>
+            <li class="slider__item  features__item   features__item_expensive">
+              <svg class="features__svg" width="95" height="94">
+						  <use xlink:href="#advantage-3" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+					  </svg>
+              <h3 class="features__title">ДОРОГО</h3>
+              <p class="features__description">Наши мастера – профессионалы своего дела не могут стоить дёшево. К тому же, разве не цена даёт определённый статус?</p>
+            </li>
+          </ul>
+        </div>
+        <div class="features__toggles  slider__toggles">
+          <label class="slider__toggle  slider__toggle-1" for="features-input-1"></label>
+          <label class="slider__toggle  slider__toggle-2" for="features-input-2"></label>
+          <label class="slider__toggle  slider__toggle-3" for="features-input-3"></label>
+        </div>
+      </div>
+    </section>
+
+    <section class="news">
+      <div class="news__wrapper">
+        <h2 class="news__title">НОВОСТИ И АКЦИИ</h2>
+        <ul class="news__items">
+          <li class="news__item">
+            <a class="news__link" href="#">
+              <time class="news__date" datetime="2017-07-22"><div class="news__day">22</div><div class="news__month">июля</div></time>
+              <p class="news__content">Нам наконец-то завезли Ягермейстер! Теперь вы можете пропустить стаканчик во время стрижки.</p>
+            </a>
+          </li>
+          <li class="news__item">
+            <a class="news__link" href="#">
+              <time class="news__date" datetime="2017-07-14"><div class="news__day">14</div><div class="news__month">июля</div></time>
+              <p class="news__content">В нашей команде пополнение: Борис «Бритва» Стригунец<span class="news__mobile-only">, обладатель множества титулов и наград,</span> пополнил наши ряды. Спешите записаться!</p>
+            </a>
+          </li>
+          <li class="news__item">
+            <a class="news__link" href="#">
+              <time class="news__date" datetime="2017-07-07"><div class="news__day">7</div><div class="news__month">июля</div></time>
+              <p class="news__content">Всё дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чём здесь подвох!</p>
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="news__show-all-btn  btn">ПОКАЗАТЬ ВСЕ</a>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="reviews__wrapper">
+        <h2 class="reviews__title">ОТЗЫВЫ О НАС</h2>
+        <a href="#" class="btn  reviews__btn  reviews__btn_write">ОСТАВИТЬ СВОЙ</a>
+        <div class="reviews__slider slider">
+          <input type="radio" class="slider__input  slider__input-1  reviews__input" name="reviews" id="reviews-input-1" checked>
+          <input type="radio" class="slider__input  slider__input-2  reviews__input" name="reviews" id="reviews-input-2">
+          <input type="radio" class="slider__input  slider__input-3  reviews__input" name="reviews" id="reviews-input-3">
+          <button type="button" class="btn  btn_narrow  reviews__btn  reviews__btn_prev">&#9668;</button>
+          <div class="slider__inner  reviews__inner">
+            <div class="slider__list">
+              <blockquote class="slider__item  reviews__item">
+                <div class="reviews__image-wrapper">
+                  <img src="img/autor-1.jpg" class="reviews__autor-foto">
+                </div>
+                <cite class="reviews__autor-name">Трэвис Баркер</cite>
+                <p class="reviews__quote">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+              </blockquote>
+              <blockquote class="slider__item  reviews__item">
+                <div class="reviews__image-wrapper">
+                  <img src="img/autor-2.jpg" class="reviews__autor-foto">
+                </div>
+                <cite class="reviews__autor-name">Серж Вачовски</cite>
+                <p class="reviews__quote">Отличный сервис! Пожалуй, теперь буду стричься здесь!</p>
+              </blockquote>
+              <blockquote class="slider__item  reviews__item">
+                <div class="reviews__image-wrapper">
+                  <img src="img/autor-3.jpg" class="reviews__autor-foto">
+                </div>
+                <cite class="reviews__autor-name">Онотоле Вассерман</cite>
+                <p class="reviews__quote">Кто умеет - делает. Кто не умеет - учит. Кто не умеет учить - учит учителей. Эти - умеют.</p>
+              </blockquote>
+            </div>
+          </div>
+          <button type="button" class="btn btn_narrow  reviews__btn  reviews__btn_next">&#9658;</button>
+          <div class="reviews__toggles slider__toggles  slider__toggles_content">
+            <label class="slider__toggle  slider__toggle_content  slider__toggle-1" for="reviews-input-1"></label>
+            <label class="slider__toggle  slider__toggle_content  slider__toggle-2" for="reviews-input-2"></label>
+            <label class="slider__toggle  slider__toggle_content  slider__toggle-3" for="reviews-input-3"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__contacts  contacts">
+        <b class="contacts__title">Барбершоп Бородинский</b>
+        <p class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+        <a href="tel:+79218949777"  class="btn  btn_dark  contacts__tel"><span class="contacts__text-hidden">Тел.:</span> +7 (921) 894-97-77</a>
+      </div>
+      <div class="page-footer__social">
+        <span class="page-footer__social-title">Давайте дружить!</span>
+        <div class="page-footer__social-links social-links">
+          <a class="btn  btn_dark  btn_narrow  social-links__item  social-links__item_vk" href="#">Вконтакте</a>
+          <a class="btn  btn_dark  btn_narrow  social-links__item  social-links__item_fb" href="#">Фейсбук</a>
+          <a class="btn  btn_dark  btn_narrow  social-links__item  social-links__item_inst" href="#">Инстаграм</a>
+        </div>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__title">Разработано:</span>
+        <a class="btn  btn_dark  copyright__btn" href="https://htmlacademy.ru/">HTML ACADEMY</a>
+      </div>
+    </div>
+  </footer>
+
+  <svg display="none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="advantage-1" viewBox="0 0 94.9 94.2">
+    <g fill="#826550" class="svg-advantage">
+        <path d="M90.3 28.4a47.2 47.2 0 0 0-8.5-13.1l-2 3.8a43.2 43.2 0 0 1 6.4 10zM90 43.6c.1 1.2.2 2.3.2 3.5a43.1 43.1 0 0 1-43.1 43.1h-2.4a7.5 7.5 0 0 1 .2 1.8 6.6 6.6 0 0 1-.4 2.2H47a47 47 0 0 0 46.7-53.3 38.3 38.3 0 0 1-3.7 2.7zM4 47.1A43.1 43.1 0 0 1 68.7 9.8L72 7.2a47.1 47.1 0 1 0-42.3 83.6 18.2 18.2 0 0 1-.6-4.6A43.1 43.1 0 0 1 4 47.1z"/>
+        <path d="M38.8 84.9c7.7-2.7 16.3-9.7 14.5-19.8-.9-5.1-4.5-5-7.3-9.3 14.4-12 24.2-28.7 33-46.3h-2c-7.4 5.7-21.9 17-28.4 26.4-2.6 3.8-4.6 9.3-7.3 13.9-4.5 7.7-15.1 21.2-6.6 31.1-1.4 4.6-1.2 12.4 4 12.6 3.3-1.7-1.3-4.6.1-8.6zm8.3-38.8a2.6 2.6 0 1 1-2.6 2.6 2.6 2.6 0 0 1 2.6-2.6zM36.8 75c-1.9-9 7-17 11.9-9.3.2 7.5-6.2 15.8-11.9 9.3z"/>
+        <path d="M56 51.2c14-5.2 30.6-7.8 39-18.5-9.4 1.4-18.1 3.5-27.8 4.6-2.1 6.3-7 9.7-11.2 13.9zM12.3 40c-4.2 12.2 8.5 16 21.8 13.8 3.8-4.8 5.8-10 2-15.9-4.9-7.4-20.9-6.3-23.8 2.1zm5.3 7.3C12.5 36.4 30.5 36.2 32.2 42c2.1 7.6-9.1 8-14.6 5.2z"/>
+      </g>
+    </symbol>
+    <symbol id="advantage-2" viewBox="0 0 94.2 88.6">
+      <g fill="#826550" class="svg-advantage">
+        <path d="M87.2 22.4l-1.7 5.2a43 43 0 0 1-13 54.2 12.8 12.8 0 0 1 3.1 2.7 47.1 47.1 0 0 0 11.6-62.1zM9.5 70.3h1.3A43.1 43.1 0 0 1 66 8.4a22.3 22.3 0 0 1 2.4-3.3A47.1 47.1 0 0 0 6.2 70.5h3.3z"/>
+        <path d="M53.5 82c.4-6.1-.9-14 .7-19.1 4.5-.1 9.6.4 13.2-.7 8.2-14.8 12-34 18.4-50.6V9c-.8-3-3.9-3.7-6.7-4.6h-.7C67.8 7.9 66.5 20.5 64 32.1c-15.8-4.2-32.3-.1-32.9 15.1-4.5.1-8 1.2-9.9 3.9-.6 6.7 1.6 10.7 6.6 11.8q-1.9 8-7.2 12.5c-6.4.6-15.6-1.6-19.1 2V80c3.2 3.9 12.9 1.2 19.1 2 6.6-3.9 8.5-12.6 11.8-19.7 4.7.4 10.9-.8 14.5.7v19.7c-7.8.5-15.4 1.2-19.1 5.9h44.7c-3.2-5.3-12.4-4.6-19-6.6zM37.7 47.2c.7-11.7 15.3-11.7 25.6-8.6.1 4.7-.5 10.2 1.3 13.2-7-.9-17-4.4-26.9-4.6z"/>
+      </g>
+    </symbol>
+    <symbol id="advantage-3" viewBox="0 0 94.2 92">
+      <g fill="#826550" class="svg-advantage">
+        <circle cx="47.1" cy="17.3" r="9.1"/>
+        <path d="M67.5 26.4H26.7a2.8 2.8 0 0 0-2.8 2.8v4.5a2.8 2.8 0 0 0 2.8 2.8h.8v45.4h-.8a2.8 2.8 0 0 0-2.8 2.8v4.5a2.8 2.8 0 0 0 2.8 2.8h40.8a2.8 2.8 0 0 0 2.8-2.8v-4.5a2.8 2.8 0 0 0-2.8-2.8h-.9V36.5h.8a2.8 2.8 0 0 0 2.8-2.8v-4.5a2.8 2.8 0 0 0-2.7-2.8zM33.7 36.5h13.2L33.7 49.7V36.5zm26.8 45.4H47l13.5-13.5v13.5zm0-28.7L33.7 80V64.9l26.8-26.8v15.1z"/>
+        <path d="M47.1 0a47.1 47.1 0 0 0-28.2 84.8 7.8 7.8 0 0 1 1.2-4.1 43.1 43.1 0 1 1 54 0 7.8 7.8 0 0 1 1.2 4.1A47.1 47.1 0 0 0 47.1 0z"/>
+      </g>
+    </symbol>
+    <symbol id="user-icon" viewBox="0 0 14.969 15">
+      <path d="M6.837.227a1.577 1.577 0 0 0-.721.269 1.75 1.75 0 0 0-.786.046 1.83 1.83 0 0 0-1.18 1.619c-.04.394-.05 1.5-.023 2.1.08.356-.2.356-.2.356-.5-.033-.278 1.516-.278 1.516a.814.814 0 0 0 .722.866 3.173 3.173 0 0 0 1.286 1.526s0 .616.018 1.072c-.076-.037.26 1.165-2.062 1.5s-2.766 1.077-3.2 1.489-.421 2.41-.421 2.41L14.969 15s-.112-2-.549-2.417-.915-1.152-3.236-1.489c-2.257-.321-1.886-1.507-1.9-1.578 0-.179.028-.941.028-.941a3.91 3.91 0 0 0 1.145-1.61 1.322 1.322 0 0 0 .866-.8s.165-1.564-.364-1.556c0 0-.251.08-.171-.275a9.608 9.608 0 0 0 .014-1.86c-.041-.395.02-1.523-.822-1.681a5.162 5.162 0 0 0-.931-.041c-.281-.039-.615-.755-1.137-.755z"/>
+    </symbol>
+    <symbol id="user-pass-icon" viewBox="0 0 15 17">
+      <path d="M13 5.451A5.5 5.5 0 0 0 7.389 0a5.366 5.366 0 0 0-5.453 5.453h-.63A1 1 0 0 0 .048 6.532v9.05A1.048 1.048 0 0 0 1.187 17h12.568A1.382 1.382 0 0 0 15 15.58V6.97a1.343 1.343 0 0 0-1.247-1.532zm-1.187-.013a4.284 4.284 0 0 0-8.564 0h8.564zM7.168 7.473A2.01 2.01 0 0 1 9.13 9.527a2.054 2.054 0 0 1-1.263 1.919c-.1.041.661 3.541.661 3.541l-2.64.019a20.682 20.682 0 0 0 .647-3.535 2.05 2.05 0 0 1-1.328-1.944 2.009 2.009 0 0 1 1.965-2.054z"/>
+    </symbol>
+  </svg>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
