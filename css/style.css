@@ -836,7 +836,8 @@ textarea {
   font-weight: 700;
 }
 .news__month {
-  margin: -5px 0 5px;
+  position: relative;
+  top: -5px;
   font-size: 16px;
   line-height: 16px;
   text-transform: lowercase;
